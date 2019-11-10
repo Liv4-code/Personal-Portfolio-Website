@@ -1,0 +1,43 @@
+/* This is how you make comments in CSS */
+
+li {
+    color: red;
+}
+
+ul li {
+    color: mediumaquamarine;
+}
+
+body * {
+    font-family: avenir, arial;
+}
+
+.navigation li {
+    color: magenta;
+}
+
+.navigation a {
+    color: magenta;
+}
+.
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#heading {
+    color: powderblue;
+    text-decoration: none;
+}
+
+.main {
+    text-decoration: underline;
+}
+
+.title {
+    background-color:peru;
+}
