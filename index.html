@@ -1,44 +1,119 @@
 <!DOCTYPE html>
-<!--This website will be made to display my CV as a software development professional-->
+<!--This website will be made to display my CV as a website development professional-->
 <html>
   <title>Olivia Scholtz</title>
-    <head>
-    <link rel="stylesheet" href="main.css">
+   <div id="container">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color:rgb(116, 116, 116);
+        font-family:"Baloo 2", cursive;
+        margin:0px;
+      }
+      .navbar {
+        text-align:center;
+        background-color:rgb(167, 223, 0);
+      }
+      .navbar ul{
+        margin:0px;
+        padding-top:15px;
+        padding-bottom:15px;
+      }
+      .navbar li {
+        text-decoration:none;
+        display:inline-block;
+        font-size:16px;
+        padding-left:160px;
+      }
+      .navbar li:first-child {
+        padding:0px;
+      }
+      .navbar a {
+        text-decoration:none;
+        color:white;
+        letter-spacing:3px;
+      }
+      .navbar a:hover {
+        color:black;
+      }
+      .header {
+        background-color:rgb(255, 230, 230);
+        text-align:center;
+        padding:200px 30px 240px 30px;
+      }
+      #main-heading {
+        font-family:"Baloo 2", cursive;
+        font-size:100px;
+        margin:0px;
+        letter-spacing:20px;
+      }
+      .intro-paragraph:hover {
+        background-color:lightpink;
+      }
+      .intro-paragraph {
+        font-size: 18px;
+        width:auto;
+        background-color:rgb(153, 204, 0);
+        text-align: center;
+        color: ghostwhite;
+        display:inline-block;
+        margin: 100px;
+        padding: 50px;
+      }
+      .main {
+        text-align:center;
+        font-size:20px;
+      }
+      table {
+        margin:auto;
+      }
+      #form {
+        margin: 50px;
+        padding: 30px 80px 50px 80px;
+        border-style: solid;
+        border-width: 4px;
+        border-color: white
+      }
+      .cite {
+        margin: 10px 450px 10px 450px;
+      }
+    </style>
   </head>
-  <body style="background-color: dimgrey;">
+  <body>
     <header>
-      <h1 id="heading" class="main title" style="font-size:60px;">Olivia Scholtz</h1>
-      <h2 style="font-size:35px;">Curiculum Vitae</h2>
-      <hr>
-      <ul class="navigation">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="fitnesspage.html">Fitness</a></li>
-        <li><a href="aboutme.html">About</a></li>
-      </ul>
-      <img src="images/me.png">
-      <img src="../../me.png">
-      <p style="text-align: center;">I'm 23, bubbly (even behind the screens), and terribly enthusiastic about coding. I'm in a serious relationship with my Macbook, even though we occasionally misunderstand each other I've only ever fallen deeper for every syntax and output she displays. Together we chat over coffee about my problems mostly. To be honest I only got into Python because it had a cool name.</p>
-      <p style="text-align: center;">As a software developer I'm heavily passionate about building and problem solving. I give group exercise classes on the side so I can get my required dose of social interaction, and to learn about how we tick as humans and what motivaes us. I'm a diligent, hard-worker, a bit too serious at times (but that's only because I take my contributions to society seriously), I occassionaly crack funny jokes, though I'm regularly cracking jokes.</p>
-      <p style="text-align: center;">Ideally I'd like to work for a company that I can grow with through mandatory continuos development. To please every client to the point where they're giving compliments to the chef (the chef is me btw).</p>
-      <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Skills & Proficiency</h3>
-      <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Typing</li>
-      </ul>
-      <h3>Experience</h3>
+      <nav class="navbar">
+        <ul>
+          <li id="home"><a href="index.html">Home</a></li>
+          <li id="aboutme"><a href="aboutme.html">About Me</a></li>
+          <li id="shop"><a href="">Shop</a></li>
+          <li><a href="#contactme">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header">
+      <h1 id="main-heading"><span style="font-size: 28px;">var</span> OLIVIA = Web Developer <span style="font-size: 28px;">&& Plant Lover;</span></h1>
+      </div>
+    </header>
+    <main>
+      <p class="intro-paragraph">I'm 23, bubbly (even behind a screen), and terribly enthusiastic about coding. I'm in a serious relationship with my Macbook,
+        and even though we occasionally misunderstand each other, I've only ever fallen deeper for every syntax and output she displays.
+        Together we mostly chat over coffee about our problems.
+        I'm a diligent, hard-worker, who can be a bit too serious at times,
+        I occassionaly crack funny jokes (though I'm regularly cracking jokes). As a web developer, I'm heavily passionate about both building things and solving problems to improve those things. I absolutely LOVE to learn, and I'd like to work for a company that I can grow with
+        through development and my love for learning.<br>(To be honest I only got into Python because it has a cool name.)</p>
+    <div class= "main">
+    <div class= "middle">
+      <h3>Skills & Proficiency</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+        </ul>
       <h3>Education</h3>
       <ul>
         <li>Matric Senior Certificate (2020)</li>
       </ul>
-      <h4>Interests & Hobbies:</h4>
-      <ul>
-        <li>Reading</li>
-        <li>The Great Outdoors</li>
-        <li>Swimming</li>
-        <li>Yoga</li>
-        <li>PlayStation</li>
-        </ul>
     <table>
       <thead>
         <tr>
@@ -66,49 +141,40 @@
     </tbody>
     </table>
     <br>
+    <h3>Experience</h3>
+    </div>
     <hr>
     <br>
-    <form action="process.php" method="POST">
-      <div>
-           <label>First Name</label>
-           <input type="text">
-      </div>
+    <form id="form" action="process.php" method="POST">
+        <h3 id="contactme">Contact Me</h3>
+          <label>First Name</label>
+          <input type="text">
       <br>
-      <div>
-           <label>Last Name</label>
-           <input type="text" name="Lastname">
-      </div>
+          <label>Last Name</label>
+          <input type="text" name="Lastname">
       <br>
-      <div>
-            <label>E-mail</label>
-            <input type="email" name="email">
-      </div>
+          <label>E-mail</label>
+          <input type="email" required name="email">
       <br>
-      <div>
         <label>Message</label>
         <textarea name="message"></textarea>
-        </div>
+        <button type="submit">Send</button>
         <br>
       </form>
-      <!--Quotations-->
-      <blockquote cite="http://love.com">"The world is a beautiful place"
-      </blockquote>
-      <!--Abbreviations are cool-->
-      <p>My <abbr title="Awelani Lufuno Mphaphuli">BF</abbr> refers to me as pants.</p>
-      <p><cite>This website was proudly brought to you by</cite> DAVU Holdings (pty.ltd)</p>
       <nav>
       </nav>
-    </header>
-    <main>
       <article>
         <section>
         <aside></aside>
         </section>
       </article>
+    </div>
     </main>
     <footer>
+      <p><cite class="cite">This website was proudly brought to you by DAVU Holdings (pty.ltd)</cite></p>
     </footer>
-    <!--Begin my JavaScript journey-->
-    <script src"main.js"></script>
-  </body>
+    <script>
+    </script>
+  </div>
+ </body>
 </html>
